@@ -3,14 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <title>てとら倶楽部 - 商品紹介</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
-    header, footer { background: #333; color: white; text-align: center; padding: 1rem; }
-    nav { background: #444; text-align: center; padding: 0.5rem; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    main { padding: 2rem; background: white; max-width: 800px; margin: 20px auto; border-radius: 10px; }
-    .product { border-bottom: 1px solid #ccc; padding: 1rem 0; }
-    .product img { max-width: 100%; height: auto; }
+    body {
+      font-family: 'M PLUS 1p', sans-serif;
+      margin: 0;
+      background: #f4f4f8;
+      color: #333;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      background: #333;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      padding: 2rem;
+      background: #fff;
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .product {
+      border-bottom: 1px solid #ddd;
+      padding: 1.5rem 0;
+    }
+    .product:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: #444;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      main {
+        margin: 10px;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -22,7 +72,7 @@
   <nav>
     <a href="index.html">ホーム</a>
     <a href="products.html">商品紹介</a>
-     <a href="contact.html">お問い合わせ</a>
+    <a href="contact.html">お問い合わせ</a>
   </nav>
 
   <main>
@@ -31,7 +81,7 @@
       <p>3～4人用 / プレイ時間: 約20分</p>
       <p>宝石を使ったスピードパズルゲーム。妖精のワガママを回避してお題を完成させろ。</p>
     </div>
-
+    <!-- 他の商品も同様にここに追加可能 -->
   </main>
 
   <footer>

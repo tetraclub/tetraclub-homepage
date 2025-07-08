@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>DiceCraft - お問い合わせ</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
+    header, footer { background: #333; color: white; text-align: center; padding: 1rem; }
+    nav { background: #444; text-align: center; padding: 0.5rem; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    main { padding: 2rem; background: white; max-width: 800px; margin: 20px auto; border-radius: 10px; }
+    .product { border-bottom: 1px solid #ccc; padding: 1rem 0; }
+    .product img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <h1>お問い合わせ</h1>
+  </header>
+
+  <nav>
+    <a href="index.htm">ホーム</a>
+    <a href="products.htm">商品紹介</a>
+    <a href="contact.htm">お問い合わせ</a>
+  </nav>
+
+  <main>
+    <h2>ご意見・ご質問はこちらから</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">メッセージ</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">送信</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 DiceCraft
+  </footer>
+
+</body>
+</html>

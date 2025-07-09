@@ -13,7 +13,6 @@ header, footer {
   text-align: center;
   padding: 1.5rem;
 }
-
 footer {
   font-size: 0.9rem;
 }
@@ -85,4 +84,22 @@ button {
 }
 button:hover {
   background: #1f669e;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  header, footer {
+    padding: 1rem;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  main {
+    margin: 15px;
+    padding: 1rem;
+  }
+  input, textarea, button {
+    font-size: 1rem;
+  }
 }

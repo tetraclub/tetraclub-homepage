@@ -45,6 +45,14 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+main a {
+  color: #1da1f2; /* Twitterブルー風 */
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
 
 /* 商品紹介 */
 .product {

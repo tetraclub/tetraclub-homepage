@@ -2,13 +2,13 @@
 body {
   font-family: 'M PLUS 1p', sans-serif;
   margin: 0;
-  background: #f4f4f8;
+  background: #eef4fb;
   color: #333;
 }
 
 /* ヘッダーとフッター */
 header, footer {
-  background: #2c3e50;
+  background: #1b3a66; /* 濃い青 */
   color: white;
   text-align: center;
   padding: 1.5rem;
@@ -20,7 +20,7 @@ footer {
 
 /* ナビゲーションバー */
 nav {
-  background: #34495e;
+  background: #24559c; /* 中間の青 */
   text-align: center;
   padding: 0.8rem;
 }
@@ -30,11 +30,13 @@ nav a {
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #ffd700; /* 黄色のアクセント */
+  border-bottom: 2px solid #ffd700;
 }
 
 /* メインコンテンツ */
@@ -44,10 +46,10 @@ main {
   max-width: 860px;
   margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* 商品紹介ページ */
+/* 商品紹介 */
 .product {
   border-bottom: 1px solid #ccc;
   padding: 1.5rem 0;
@@ -72,13 +74,13 @@ label {
 input, textarea {
   padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 6px;
   font-family: inherit;
 }
 
 button {
-  background: #3498db;
+  background: #2980b9; /* 明るめの青 */
   color: white;
   border: none;
   padding: 0.9rem;
@@ -89,5 +91,5 @@ button {
 }
 
 button:hover {
-  background: #2980b9;
+  background: #1f669e;
 }

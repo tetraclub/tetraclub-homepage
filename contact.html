@@ -21,8 +21,7 @@
 
   <main>
     <h2>ご意見・ご質問はこちらから</h2>
-    <form action="https://formspree.io/f/xdkzrpgj" method="POST">
-      <input type="hidden" name="_redirect" value="https://tetraclub.github.io/tetraclub-homepage/thanks.html">
+    <form id="contact-form">
       <label for="name">お名前</label>
       <input type="text" id="name" name="name" required />
 
@@ -39,6 +38,31 @@
   <footer>
     &copy; 2025 てとら倶楽部
   </footer>
+
+  <!-- JavaScriptによる送信とリダイレクト処理 -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", async function (e) {
+      e.preventDefault(); // デフォルトの送信をキャンセル
+      const form = e.target;
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch("https://formspree.io/f/xdkzrpgj", {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          window.location.href = "thanks.html"; // 成功時に遷移
+        } else {
+          alert("送信に失敗しました。もう一度お試しください。");
+        }
+      } catch (error) {
+        alert("エラーが発生しました。ネットワーク環境をご確認ください。");
+      }
+    });
+  </script>
 
 </body>
 </html>

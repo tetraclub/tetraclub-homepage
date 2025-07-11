@@ -45,6 +45,7 @@ nav a:hover {
   color: #ffd700; /* 黄色のアクセント */
   border-bottom: 2px solid #ffd700;
   border-radius: 4px;
+  margin-bottom: -2px;
 }
 nav a.active {
   border-bottom: 2px solid #ffd700;

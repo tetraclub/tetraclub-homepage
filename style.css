@@ -94,20 +94,43 @@ button:hover {
   background: #1f669e;
 }
 
-/* レスポンシブ対応 */
-@media screen and (max-width: 600px) {
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* モバイル最適化 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
   header, footer {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
+
+  nav {
+    gap: 0.5rem;
+    padding: 0.5rem 0.25rem;
+  }
+
   nav a {
-    display: block;
-    margin: 10px 0;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
   }
+
   main {
-    margin: 15px;
     padding: 1rem;
+    margin: 10px auto;
+    width: 90%;
   }
+
   input, textarea, button {
     font-size: 1rem;
+    width: 100%;
+  }
+
+  .product {
+    padding: 1rem 0;
   }
 }

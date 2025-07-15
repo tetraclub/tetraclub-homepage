@@ -9,13 +9,23 @@ body {
   color: #333;
 }
 
-/* ヘッダーとフッター */
+/* ヘッダー(ロゴレイアウト)とフッター */
 header, footer {
   background: #1b3a66; /* 濃い青 */
   color: white;
   text-align: center;
   padding: 1.5rem;
 }
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  height: 48px;
+  width: auto;
+}
+
 footer {
   font-size: 0.9rem;
 }

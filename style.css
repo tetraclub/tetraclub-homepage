@@ -24,6 +24,7 @@ header, footer {
 .logo {
   height: 52px;
   width: auto;
+  cursor: pointer; /* カーソルをポインターに（クリック感を出す） */
 }
 
 footer {

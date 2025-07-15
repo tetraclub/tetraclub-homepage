@@ -11,7 +11,7 @@ body {
 
 /* ヘッダー(ロゴレイアウト)とフッター */
 header, footer {
-  background: #1b3a66; /* 濃い青 */
+  background: white;
   color: white;
   text-align: center;
   padding: 1.5rem;
@@ -23,7 +23,7 @@ header, footer {
   gap: 1rem;
 }
 .logo {
-  height: 52px;
+  height: 150px;
   width: auto;
   vertical-align: middle;
   cursor: pointer; /* カーソルをポインターに（クリック感を出す） */
@@ -39,7 +39,7 @@ footer {
 
 /* ナビゲーションバー */
 nav {
-  background: #24559c; /* 中間の青 */
+  background: black;
   text-align: center;
   padding: 0.5rem;
   display: flex;

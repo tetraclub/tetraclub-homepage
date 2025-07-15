@@ -24,7 +24,12 @@ header, footer {
 .logo {
   height: 52px;
   width: auto;
+  vertical-align: middle;
   cursor: pointer; /* カーソルをポインターに（クリック感を出す） */
+}
+.logo-title h1 {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 footer {

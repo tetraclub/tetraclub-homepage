@@ -135,6 +135,12 @@ button:hover {
   header, footer {
     padding: 1rem 0.5rem;
   }
+  .logo-title {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
   nav {
     gap: 0.5rem;
     padding: 0.5rem 0.25rem;

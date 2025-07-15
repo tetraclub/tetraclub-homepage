@@ -12,7 +12,7 @@ body {
 /* ヘッダー(ロゴレイアウト)とフッター */
 header, footer {
   background: white;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1.5rem;
 }
